@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logo {
+    height: 4rem;
+    margin: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        justify-content: center;
+    }
+    .logo {
+        width: 90vw;
+        margin: 20px;
+    }
+}

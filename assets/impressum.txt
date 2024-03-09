@@ -1,0 +1,3 @@
+Font:
+Copyright (C) 2020 CyberFei Inc. https://github.com/CyberFei/D-DIN-PRO,
+with Reserved Font Names "D-DIN-PRO".
