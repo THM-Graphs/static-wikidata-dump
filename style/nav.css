@@ -19,3 +19,22 @@
         margin: 20px;
     }
 }
+
+
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #6b7982;
+    position: absolute;
+    bottom: 0;
+}
+footer a,span {
+    color: white;
+    text-decoration: 0;
+    font-family: THM-Regular, serif;
+    margin: 0 3px;
+}
+.footer-links {
+    padding: 10px;
+}

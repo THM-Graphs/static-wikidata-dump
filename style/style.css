@@ -29,23 +29,6 @@ p {
     font-size: 120%;
 }
 
-footer {
-    display: flex;
-    width: 100%;
-    background-color: #6b7982;
-    position: absolute;
-    bottom: -40px;
-}
-footer a,span {
-    color: white;
-    text-decoration: 0;
-    font-family: THM-Regular, serif;
-    margin: 0 3px;
-}
-.footer-links {
-    padding: 10px;
-}
-
 @font-face {
     font-family: 'THM-Medium';
     src: url('../assets/D-DIN-PRO-500-Medium.otf'); /* IE9 Compat Modes */
