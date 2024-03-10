@@ -1,7 +1,0 @@
-{
-  "name": "wikidata-dump",
-  "version": "1.0.0",
-  "description": "A handy link to the Neo4J Browser and the Wikidata Dump.",
-  "author": "Vincent Neeb",
-  "license": "ISC"
-}
