@@ -1,53 +1,31 @@
 
 .card {
-    margin: 20px;
+    margin-top: 30px;
     padding: 30px 70px;
     border: 1px solid #000000;
     width: 60%;
-    height: 140px;
+    min-height: 140px;
     text-align: center;
     cursor: pointer;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.58);
     text-decoration: 0;
     color: black;
+
+    white-space: normal;
+    word-break: break-word;
 }
 
-@media (max-width: 960px) {
+@media (min-width: 310px) {
     .card {
-        margin: 30px;
-        height: 120px;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .card {
-        margin: 20px;
-        padding: 50px 20px;
+        margin: 10px 0;
     }
 }
-
-@media (max-width: 440px) {
-    .card {
-        width: 80%;
-    }
-}
-
-@media (max-width: 310px) {
-    .card {
-        padding: 30px 20px 60px;
-        width: 80%;
-        height: 170px;
-    }
-}
-
 
 .wiki {
     background-image: url("../assets/wikidata_card-bg.png");
     background-position: right;
     background-blend-mode: color;
     background-color: rgba(255, 255, 255, 0.8);
-
 }
 
 .neo4j {
@@ -56,4 +34,16 @@
     color: white;
     background-blend-mode: color;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wiki-disclaimer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin-top: 20px;
+    padding: 10px;
+
+    background-color: rgba(0,0,0,0.05);
+    border: 1px solid #000;
 }

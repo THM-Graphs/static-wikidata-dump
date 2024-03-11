@@ -7,9 +7,14 @@
     flex-direction: column;
 }
 
+* {
+    font-family: THM-Medium, serif;
+}
+
 body {
-    min-height: calc(100vh - 20px);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #f2f5f6;
     margin: 0;
 }
@@ -21,12 +26,16 @@ body {
 }
 
 h1 {
-    font-family: THM-Medium, serif;
     font-size: 250%;
 }
 
 p {
     font-size: 120%;
+    margin: 5px 0;
+}
+
+.mt-1 {
+    margin-top: 10px;
 }
 
 @font-face {
