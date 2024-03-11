@@ -12,31 +12,44 @@
 <body>
 <header class="nav">
     <img class="logo" src="./assets/FB06_MNI_Logo.svg" alt="Logo of the THM department MNI">
-
 </header>
-<div class="container">
-    <a class="card wiki" href="https://wikidata.mni.thm.de/neo4j.dump">
+
+<main class="container">
+    <div class="card wiki">
         <h1>Wikidata Dump</h1>
-        <p>A Wikidata dump of the Neo4J database. Be aware it has a size of ~115GB. It's SHA1 checksum is 305e53cc3cb7fdba2cea08d69fe6b354bb78eaab.
+        <p>A Wikidata dump of the neo4j database. <b>Be aware</b> it has a size of <b>~115GB</b>. </p>
+        <p>It's SHA1 checksum is <code>305e53cc3cb7fdba2cea08d69fe6b354bb78eaab</code>.</p>
 
-If you're running Neo4j Desktop follow the instructions at https://neo4j.com/docs/desktop-manual/current/operations/create-from-dump/ to create a database instance from the dump.
-
-If you're running neo4j either directly on your machine or via docker use the neo4j-admin database load command.</p>
-    </a>
+        <div class="wiki-disclaimer">
+            <small>If you're running neo4j Desktop follow the instructions to create a database instance at: </small>
+            <small>
+                <a href="https://neo4j.com/docs/desktop-manual/current/operations/create-from-dump/" target="_blank">
+                    https://neo4j.com/docs/desktop-manual/current/operations/create-from-dump/
+                </a>
+            </small>
+            <small class="mt-1">If you're running neo4j either directly on your machine or via docker use the neo4j-admin database load command.</small>
+        </div>
+    </div>
     <a class="card neo4j" href="https://wikidata.mni.thm.de:7473/" target="_blank">
-        <h1>Neo4J Browser</h1>
-        <p>Neo4j is a graph database that stores data in relationships between entities.</p>
+        <h1>neo4j Browser</h1>
+        <p>neo4j graph database browser including the Wikidata dump.</p>
     </a>
-</div>
+</main>
+
 <footer>
     <div class="footer-links">
         <a href="https://www.thm.de/site/impressum.html" target="_blank">
-            <span>Impressum</span>
+            <span>Legal Notice</span>
         </a>
         <span>|</span>
         <a href="https://github.com/CyberFei/D-DIN-PRO" target="_blank"><span>Font</span></a>
     </div>
 </footer>
+
+<script>
+    document.querySelector(".wiki").addEventListener("click", () => window.open("https://wikidata.mni.thm.de/neo4j.dump"));
+    document.querySelector(".wiki-disclaimer").addEventListener("click", (e) => e.stopPropagation());
+</script>
 
 </body>
 </html>
